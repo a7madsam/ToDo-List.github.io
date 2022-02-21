@@ -1,0 +1,123 @@
+* {
+  font-family: "Quicksand", sans-serif;
+  box-sizing: border-box;
+}
+:root {
+  --main-color: #007bff;
+}
+.spanStyle {
+  text-decoration: line-through;
+  text-decoration-color: var(--main-color);
+}
+.to-do-list {
+  height: 100vh;
+  background-color: #f9f9fa;
+}
+.container {
+  padding: 15px 40px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+}
+@media (min-width: 786px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    width: 1170px;
+  }
+}
+.container .header h1 {
+  text-shadow: 3px 3px 20px var(--main-color), -2px 1px 30px var(--main-color);
+}
+.container .input-area {
+  display: grid;
+  grid-template-columns: 90% auto;
+  align-items: center;
+}
+.container input {
+  flex-basis: 90%;
+  height: 40px;
+  border: solid 1.5px #d3d3d3;
+  border-radius: 0;
+  text-indent: 5px;
+  transition: 1s;
+}
+input[type="text"]:hover {
+  box-shadow: 0 0 1pt 0.5pt #d3d3d3;
+}
+input[type="text"]:focus {
+  border: solid 1px var(--main-color);
+  outline: 0;
+}
+.container button {
+  flex: 1;
+  height: 40px;
+  background-color: var(--main-color);
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: 3px;
+}
+.container ul {
+  list-style-type: none;
+  margin: 20px 0px;
+  padding: 0;
+  display: flex;
+  flex-flow: column wrap;
+}
+.container ul div {
+  display: grid;
+  grid-template-columns: 90% auto;
+  align-items: center;
+  background-color: #fcfbfe;
+  padding: 10px;
+  margin-bottom: 5px;
+  position: relative;
+}
+.container ul div::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 5px;
+  top: 0px;
+  left: 0px;
+  background-color: var(--main-color);
+}
+.container ul div li {
+  overflow-wrap: break-word;
+}
+.container ul div button {
+  border: none;
+}
+.container .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .footer p i {
+  font-size: 15px;
+  color: var(--main-color);
+}
+.container .footer #one {
+  color: #007bff;
+}
+.container .footer #two {
+  color: #f44336;
+}
+.container .footer #three {
+  color: #9c27b0;
+}
+.container .footer #four {
+  color: #e91e63;
+}
