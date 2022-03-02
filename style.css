@@ -48,14 +48,15 @@
   border: solid 1.5px #d3d3d3;
   border-radius: 0;
   text-indent: 5px;
-  transition: 1s;
-}
-input[type="text"]:hover {
-  box-shadow: 0 0 1pt 0.5pt #d3d3d3;
 }
 input[type="text"]:focus {
   border: solid 1px var(--main-color);
   outline: 0;
+  transition: 0.3s;
+}
+input[type="text"]:focus::placeholder {
+  opacity: 0;
+  transition: 0.3s;
 }
 .container button {
   flex: 1;
@@ -95,7 +96,7 @@ input[type="text"]:focus {
   background-color: var(--main-color);
 }
 .container ul div li {
-  overflow-wrap: break-word;
+  overflow-wrap: anywhere;
 }
 .container ul div button {
   border: none;
