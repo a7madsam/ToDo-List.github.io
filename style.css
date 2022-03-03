@@ -78,8 +78,8 @@ input[type="text"]:focus::placeholder {
   flex-flow: column wrap;
 }
 .container ul div {
-  display: grid;
-  grid-template-columns: 90% auto;
+  display: flex;
+  /* grid-template-columns: 90% auto; */
   align-items: center;
   background-color: #fcfbfe;
   padding: 10px;
@@ -97,8 +97,11 @@ input[type="text"]:focus::placeholder {
 }
 .container ul div li {
   overflow-wrap: anywhere;
+  max-width: 90%;
+  flex-basis: 90%;
 }
 .container ul div button {
+  flex: 1;
   border: none;
 }
 .container .footer {
